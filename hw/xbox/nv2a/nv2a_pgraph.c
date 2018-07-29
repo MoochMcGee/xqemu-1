@@ -46,7 +46,7 @@ static const GLenum pgraph_texture_addr_map[] = {
     GL_MIRRORED_REPEAT,
     GL_CLAMP_TO_EDGE,
     GL_CLAMP_TO_BORDER,
-    // GL_CLAMP
+    GL_CLAMP
 };
 
 static const GLenum pgraph_blend_factor_map[] = {
