@@ -3791,6 +3791,7 @@ static void pgraph_bind_textures(NV2AState *d)
             pgraph_texture_mag_filter_map[mag_filter]);
 
         /* Texture wrapping */
+        NV2A_DPRINTF("addru = %d, addrv = %d, addrp = %d\n", addru, addrv, addrp);
         assert(addru < ARRAY_SIZE(pgraph_texture_addr_map));
         glTexParameteri(binding->gl_target, GL_TEXTURE_WRAP_S,
             pgraph_texture_addr_map[addru]);
